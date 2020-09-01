@@ -16,6 +16,6 @@ jobs:
           pip install poetry
           poetry install
       - name: Lint
-        run: poetry run flake8 zygoat-django/
+        run: poetry run flake8 zygoat_django/
       - name: Tests
         run: poetry run pytest
