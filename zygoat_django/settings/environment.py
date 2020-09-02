@@ -13,3 +13,6 @@ def prod_required_env(key, default, method="str"):
 
 
 ALLOWED_HOSTS = [prod_required_env("DJANGO_ALLOWED_HOST", default="*")]
+
+db_config = env.db_url("DATABASE_URL", default="postgres://postgres:postgres@db/postgres")
+DATABASES = {"default": db_config}
