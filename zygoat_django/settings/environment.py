@@ -3,6 +3,7 @@ import environ
 env = environ.Env()
 
 PRODUCTION = env.bool("DJANGO_PRODUCTION", default=False)
+DEBUG = False if PRODUCTION else env.bool("DJANGO_DEBUG", default=True)
 
 
 def prod_required_env(key, default, method="str"):
