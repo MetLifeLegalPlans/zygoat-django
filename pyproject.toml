@@ -5,7 +5,7 @@ description = ""
 authors = ["Mark Rawls <markrawls96@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.6"
 importlib-metadata = "^1.7.0"
 django = "^3.1.1"
 django-environ = "^0.4.5"
