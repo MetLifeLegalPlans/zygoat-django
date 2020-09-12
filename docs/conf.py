@@ -33,6 +33,7 @@ extensions = [
     "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.viewcode",
+    "autoapi.extension",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -42,6 +43,9 @@ templates_path = ["_templates"]
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+
+autoapi_type = "python"
+autoapi_dirs = ["../zygoat_django"]
 
 autodoc_default_options = {
     "undoc-members": False,

@@ -14,11 +14,13 @@ Recommended Usage
 This applies all of the default settings values typically used with Zygoat, and makes them modifiable later.
 
 
+Caveats
+^^^^^^^
+
+ - ``zygoat`` will not automatically remove the ``DATABASES`` block from your Django source code on initialization, this must be done manually for now
+
+
 Details/Advanced Usage
 ----------------------
 
-.. toctree::
-   :maxdepth: 2
-
-   environment
-   drf
+To see all that ``zygoat-django.settings`` exports, please see the `API Reference </autoapi/zygoat_django/settings>`_ section of the documentation.
