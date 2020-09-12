@@ -115,4 +115,3 @@ dmypy.json
 # Swap files
 *.swp
 .tern-port
-docs/API/*
