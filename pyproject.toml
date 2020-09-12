@@ -22,7 +22,7 @@ watchdog = "^0.10.3"
 sphinx-autoapi = "^1.5.0"
 
 [tool.poetry.extras]
-docs = ["sphinx", "sphinx-rtd-theme", "sphinx-autoapi"]
+docs = ["sphinx-autoapi", "sphinx", "sphinx-rtd-theme"]
 
 [tool.black]
 line-length = 95
