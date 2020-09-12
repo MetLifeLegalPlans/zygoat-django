@@ -16,6 +16,9 @@ djangorestframework-camel-case = "^1.2.0"
 pytest = "^5.2"
 flake8-black = "^0.2.1"
 black = "^20.8b1"
+sphinx = "^3.2.1"
+sphinx-rtd-theme = "^0.5.0"
+watchdog = "^0.10.3"
 
 [tool.black]
 line-length = 95
