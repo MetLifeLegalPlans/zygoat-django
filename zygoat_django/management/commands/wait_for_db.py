@@ -1,3 +1,10 @@
+"""
+Checks every half second to see if your database can be connected to successfully.
+
+Once a connection is made, the command returns 0. If a connection can never be made,
+it blocks indefinitely.
+"""
+
 from time import sleep
 
 from django.core.management.base import BaseCommand
