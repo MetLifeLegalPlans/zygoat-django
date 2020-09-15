@@ -11,7 +11,7 @@ Welcome to zygoat-django's documentation!
    :caption: Contents:
 
    introduction
-   usage
+   usage/index
 
 
 
