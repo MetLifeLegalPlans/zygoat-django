@@ -10,8 +10,6 @@ Recommended Usage
 
 This applies all of the default settings values typically used with Zygoat, and makes them modifiable later.
 
-.. include:: caveats.rst
-
 .. include:: middleware.rst
 
 .. include:: commands.rst
