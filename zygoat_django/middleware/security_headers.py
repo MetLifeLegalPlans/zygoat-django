@@ -19,6 +19,7 @@ class SecurityHeaderMiddleware(object):
     def __call__(self, request):
         response = self.get_response(request)
 
-        response.update(HEADERS)
+        for k, v in HEADERS:
+            response[k] = v
 
         return response
