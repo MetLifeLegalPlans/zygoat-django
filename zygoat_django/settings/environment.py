@@ -82,3 +82,5 @@ The default entry is generated automatically from :py:data:`db_config`.
 .. note::
    If you need more than one database or a different default setup, you can modify this value in your application's ``settings.py`` file.
 """
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
