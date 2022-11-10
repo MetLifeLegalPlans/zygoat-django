@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "zygoat-django"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 authors = ["Mark Rawls <markrawls96@gmail.com>"]
 
