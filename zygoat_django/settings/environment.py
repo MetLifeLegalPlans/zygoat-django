@@ -6,6 +6,8 @@ This module exposes a few utilities:
 .. autodata:: env
 """
 
+from zygoat_django.exceptions import MissingEnvironmentError
+
 import environ
 
 env = environ.Env()
@@ -50,8 +52,8 @@ def prod_required_env(key, default, method="str"):
        - `django-environ <https://github.com/joke2k/django-environ>`_
        - `django-environ supported types <https://github.com/joke2k/django-environ#supported-types>`_
     """
-    if PRODUCTION:
-        default = environ.Env.NOTSET
+    if PRODUCTION and key not in env:
+        raise MissingEnvironmentError(f"{key} not found in environment")
     return getattr(env, method)(key, default)
 
 
